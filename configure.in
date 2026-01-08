@@ -28,26 +28,7 @@ CFLAGS="$CFLAGS $SDL_CFLAGS"
 LIBS="$LIBS $SDL_LIBS"
 
 dnl Check for SDL_Image
-AC_CHECK_LIB(SDL_image,
-	IMG_Load,
-	LIBS="$LIBS -lSDL_image",
-	AC_MSG_ERROR([*** SDL_image library not found!])
-)
-
-dnl Check if we want sound (default=yes)
-AC_ARG_ENABLE(sound,
-[  --enable-sound       enable sound support [default=yes]],
-		,enable_sound=yes)
-if test x$enable_sound = xyes; then
-  dnl Check for SDL_Mixer
-  AC_CHECK_LIB(SDL_mixer,
-	Mix_OpenAudio,
-	LIBS="$LIBS -lSDL_mixer",
-	AC_MSG_ERROR([*** SDL_mixer library not found!])
-  )
-else
-  CFLAGS="$CFLAGS -DNOSOUND"  
-fi
+CFLAGS="$CFLAGS -DNOSOUND"  
 
 
 AC_PROG_INSTALL
