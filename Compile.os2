@@ -1,3 +1,6 @@
 Compiled with configure LDFLAGS=-Zomf
 Built with make 'LIBS=-lsdlimage -lsdlmixer -lsdl12'
+Add -Dnosound to CFLAGS to disable sound
+
 Dave yeo
+dave.r.yeo@gmail.com

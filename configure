@@ -4637,7 +4637,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.beam \
 CFLAGS="$CFLAGS $SDL_CFLAGS"
 LIBS="$LIBS $SDL_LIBS"
 
-CFLAGS="$CFLAGS -DNOSOUND"
+# CFLAGS="$CFLAGS -DNOSOUND"
 
 
 
