@@ -5,10 +5,11 @@ Invaders game created with SDL.
 * GNU GPL V2
 
 ## COMPILE TOOLS
-* 
+* gcc
+* SDL 1
  
 ## AUTHORS
-* 
+* Port: Dave Yeo
 
 ## LINKS
-* https://sourceforge.net/projects/sdlinvaders/
+* https://web.archive.org/web/20040124163303/http://www.sdlinvaders.de/
